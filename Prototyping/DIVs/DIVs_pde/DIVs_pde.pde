@@ -15,7 +15,7 @@ float artistPicHeight = appHeight * 3 / paperHeight;
 
 rect(artistPicX, artistPicY, artistPicWidth, artistPicHeight);
 //
-float songCoverX = appWidth * 3.5 / paperWidth;
+float songCoverX = appWidth * 8.5 / paperWidth;
 float songCoverY = appHeight * 5.5 / paperHeight;
 float songCoverWidth = appWidth * 11 / paperWidth;
 float songCoverHeight = appHeight * 5 / paperHeight;
@@ -85,10 +85,10 @@ float CurrentTimeHeight = appHeight * 0.5 / paperHeight;
 //
 rect(CurrentTimeX, CurrentTimeY, CurrentTimeWidth, CurrentTimeHeight);
 //
-float imageX = appWidth * 50 / paperWidth; //MrM's Numbers
-float imageY = appHeight * 5 / paperHeight;
-float imageWidth = appWidth * 60 / paperWidth;
-float imageHeight = appHeight * 40 / paperHeight;
+float TotalTimeX = appWidth * 23 / paperWidth; //MrM's Numbers
+float TotalTimeY = appHeight * 18.5 / paperHeight;
+float TotalTimeWidth = appWidth * 1 / paperWidth;
+float TotalTimeHeight = appHeight * 0.5 / paperHeight;
 //
-rect(imageX, imageY, imageWidth, imageHeight);
+rect(TotalTimeX, TotalTimeY, TotalTimeWidth, TotalTimeHeight);
 //
