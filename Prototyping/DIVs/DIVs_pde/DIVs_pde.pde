@@ -5,6 +5,10 @@ println(displayWidth, displayHeight);
 int appWidth = displayWidth;
 int appHeight = displayHeight;
 //
+background(60, 60, 60);
+//
+fill(200, 200, 200);
+//
 float paperWidth = 28.0;
 float paperHeight = 21.5;
 //
@@ -36,6 +40,8 @@ float ArtistNameHeight = appHeight * 2 / paperHeight;
 //
 rect(ArtistNameX, ArtistNameY, ArtistNameWidth, ArtistNameHeight);
 //
+fill(0, 180, 255);
+//
 float PlayPauseButtonX = appWidth * 10 / paperWidth; //MrM's Numbers
 float PlayPauseButtonY = appHeight * 14 / paperHeight;
 float PlayPauseButtonWidth = appWidth * 2 / paperWidth;
@@ -57,12 +63,16 @@ float PrevButtonHeight = appHeight * 2 / paperHeight;
 //
 rect(PrevButtonX, PrevButtonY, PrevButtonWidth, PrevButtonHeight);
 //
+fill(255, 255, 255);
+//
 float ProgressBarX = appWidth * 4 / paperWidth; //MrM's Numbers
 float ProgressBarY = appHeight * 18 / paperHeight;
 float ProgressBarWidth = appWidth * 20 / paperWidth;
 float ProgressBarHeight = appHeight * 0.5 / paperHeight;
 //
 rect(ProgressBarX, ProgressBarY, ProgressBarWidth, ProgressBarHeight);
+//
+fill(200, 200, 200);
 //
 float VolumeIconX = appWidth * 0.5 / paperWidth; //MrM's Numbers
 float VolumeIconY = appHeight * 14 / paperHeight;
@@ -71,12 +81,16 @@ float VolumeIconHeight = appHeight * 2 / paperHeight;
 //
 rect(VolumeIconX, VolumeIconY, VolumeIconWidth, VolumeIconHeight);
 //
+fill(255, 255, 255);
+//
 float VolumeBarX = appWidth * 4 / paperWidth; //MrM's Numbers
 float VolumeBarY = appHeight * 15 / paperHeight;
 float VolumeBarWidth = appWidth * 3 / paperWidth;
 float VolumeBarHeight = appHeight * 0.5 / paperHeight;
 //
 rect(VolumeBarX, VolumeBarY, VolumeBarWidth, VolumeBarHeight);
+//
+fill(0, 180, 255);
 //
 float CurrentTimeX = appWidth * 4 / paperWidth; //MrM's Numbers
 float CurrentTimeY = appHeight * 18.5 / paperHeight;
