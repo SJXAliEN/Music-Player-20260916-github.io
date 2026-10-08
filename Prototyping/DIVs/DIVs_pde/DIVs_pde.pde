@@ -42,21 +42,21 @@ rect(ArtistNameX, ArtistNameY, ArtistNameWidth, ArtistNameHeight);
 //
 fill(0, 180, 255);
 //
-float PlayPauseButtonX = appWidth * 10 / paperWidth; //MrM's Numbers
-float PlayPauseButtonY = appHeight * 14 / paperHeight;
-float PlayPauseButtonWidth = appWidth * 2 / paperWidth;
-float PlayPauseButtonHeight = appHeight * 2 / paperHeight;
+float PlayButtonX = appWidth * 12 / paperWidth; //MrM's Numbers
+float PlayButtonY = appHeight * 14 / paperHeight;
+float PlayButtonWidth = appWidth * 2 / paperWidth;
+float PlayButtonHeight = appHeight * 2 / paperHeight;
 //
-rect(PlayPauseButtonX, PlayPauseButtonY, PlayPauseButtonWidth, PlayPauseButtonHeight);
+rect(PlayButtonX, PlayButtonY, PlayButtonWidth, PlayButtonHeight);
 //
-float NextButtonX = appWidth * 13 / paperWidth; //MrM's Numbers
+float NextButtonX = appWidth * 18 / paperWidth; //MrM's Numbers
 float NextButtonY = appHeight * 14 / paperHeight;
 float NextButtonWidth = appWidth * 2 / paperWidth;
 float NextButtonHeight = appHeight * 2 / paperHeight;
 //
 rect(NextButtonX, NextButtonY, NextButtonWidth, NextButtonHeight);
 //
-float PrevButtonX = appWidth * 16 / paperWidth; //MrM's Numbers
+float PrevButtonX = appWidth * 9 / paperWidth; //MrM's Numbers
 float PrevButtonY = appHeight * 14 / paperHeight;
 float PrevButtonWidth = appWidth * 2 / paperWidth;
 float PrevButtonHeight = appHeight * 2 / paperHeight;
@@ -105,4 +105,60 @@ float TotalTimeWidth = appWidth * 1 / paperWidth;
 float TotalTimeHeight = appHeight * 0.5 / paperHeight;
 //
 rect(TotalTimeX, TotalTimeY, TotalTimeWidth, TotalTimeHeight);
+//
+float PauseX = appWidth * 15 / paperWidth; //MrM's Numbers
+float PauseY = appHeight * 14 / paperHeight;
+float PauseWidth = appWidth * 2 / paperWidth;
+float PauseHeight = appHeight * 2 / paperHeight;
+//
+rect(PauseX, PauseY, PauseWidth, PauseHeight);
+//
+float resetX = appWidth * 1 / paperWidth; //MrM's Numbers
+float resetY = appHeight * 8.5 / paperHeight;
+float resetWidth = appWidth * 2 / paperWidth;
+float resetHeight = appHeight * 2 / paperHeight;
+//
+rect(resetX, resetY, resetWidth, resetHeight);
+//
+float LoopOneX = appWidth * 4 / paperWidth; //MrM's Numbers
+float LoopOneY = appHeight * 8.5 / paperHeight;
+float LoopOneWidth = appWidth * 2 / paperWidth;
+float LoopOneHeight = appHeight * 2 / paperHeight;
+//
+rect(LoopOneX, LoopOneY, LoopOneWidth, LoopOneHeight);
+//
+float Slow2xX = appWidth * 2.5 / paperWidth; //MrM's Numbers
+float Slow2xY = appHeight * 11.5 / paperHeight;
+float Slow2xWidth = appWidth * 2 / paperWidth;
+float Slow2xHeight = appHeight * 2 / paperHeight;
+//
+rect(Slow2xX, Slow2xY, Slow2xWidth, Slow2xHeight);
+//
+float ShuffleX = appWidth * 13.5 / paperWidth; //MrM's Numbers
+float ShuffleY = appHeight * 11.5 / paperHeight;
+float ShuffleWidth = appWidth * 2 / paperWidth;
+float ShuffleHeight = appHeight * 2 / paperHeight;
+//
+rect(ShuffleX, ShuffleY, ShuffleWidth, ShuffleHeight);
+//
+float MuteX = appWidth * 22 / paperWidth; //MrM's Numbers
+float MuteY = appHeight * 8.5 / paperHeight;
+float MuteWidth = appWidth * 2 / paperWidth;
+float MuteHeight = appHeight * 2 / paperHeight;
+//
+rect(MuteX, MuteY, MuteWidth, MuteHeight);
+//
+float LoopInfinityX = appWidth * 25 / paperWidth; //MrM's Numbers
+float LoopInfinityY = appHeight * 8.5 / paperHeight;
+float LoopInfinityWidth = appWidth * 2 / paperWidth;
+float LoopInfinityHeight = appHeight * 2 / paperHeight;
+//
+rect(LoopInfinityX, LoopInfinityY, LoopInfinityWidth, LoopInfinityHeight);
+//
+float Fast2xX = appWidth * 23.6 / paperWidth; //MrM's Numbers
+float Fast2xY = appHeight * 11.5 / paperHeight;
+float Fast2xWidth = appWidth * 2 / paperWidth;
+float Fast2xHeight = appHeight * 2 / paperHeight;
+//
+rect(Fast2xX, Fast2xY, Fast2xWidth, Fast2xHeight);
 //
