@@ -49,6 +49,15 @@ float PlayButtonHeight = appHeight * 2 / paperHeight;
 //
 rect(PlayButtonX, PlayButtonY, PlayButtonWidth, PlayButtonHeight);
 //
+fill(255);
+triangle(
+  PlayButtonX + PlayButtonWidth * 0.25, PlayButtonY + PlayButtonHeight * 0.25,
+  PlayButtonX + PlayButtonWidth * 0.25, PlayButtonY + PlayButtonHeight * 0.75,
+  PlayButtonX + PlayButtonWidth * 0.75, PlayButtonY + PlayButtonHeight * 0.5
+);
+//
+fill(0, 180, 255);
+//
 float NextButtonX = appWidth * 18 / paperWidth; //MrM's Numbers
 float NextButtonY = appHeight * 14 / paperHeight;
 float NextButtonWidth = appWidth * 2 / paperWidth;
@@ -56,12 +65,38 @@ float NextButtonHeight = appHeight * 2 / paperHeight;
 //
 rect(NextButtonX, NextButtonY, NextButtonWidth, NextButtonHeight);
 //
+fill(255);
+triangle(
+  NextButtonX + NextButtonWidth * 0.2, NextButtonY + NextButtonHeight * 0.25,
+  NextButtonX + NextButtonWidth * 0.2, NextButtonY + NextButtonHeight * 0.75,
+  NextButtonX + NextButtonWidth * 0.5, NextButtonY + NextButtonHeight * 0.5
+);
+triangle(
+  NextButtonX + NextButtonWidth * 0.5, NextButtonY + NextButtonHeight * 0.25,
+  NextButtonX + NextButtonWidth * 0.5, NextButtonY + NextButtonHeight * 0.75,
+  NextButtonX + NextButtonWidth * 0.8, NextButtonY + NextButtonHeight * 0.5
+);
+//
+fill(0, 180, 255);
+//
 float PrevButtonX = appWidth * 9 / paperWidth; //MrM's Numbers
 float PrevButtonY = appHeight * 14 / paperHeight;
 float PrevButtonWidth = appWidth * 2 / paperWidth;
 float PrevButtonHeight = appHeight * 2 / paperHeight;
 //
 rect(PrevButtonX, PrevButtonY, PrevButtonWidth, PrevButtonHeight);
+//
+fill(255);
+triangle(
+  PrevButtonX + PrevButtonWidth * 0.5, PrevButtonY + PrevButtonHeight * 0.25,
+  PrevButtonX + PrevButtonWidth * 0.5, PrevButtonY + PrevButtonHeight * 0.75,
+  PrevButtonX + PrevButtonWidth * 0.2, PrevButtonY + PrevButtonHeight * 0.5
+);
+triangle(
+  PrevButtonX + PrevButtonWidth * 0.8, PrevButtonY + PrevButtonHeight * 0.25,
+  PrevButtonX + PrevButtonWidth * 0.8, PrevButtonY + PrevButtonHeight * 0.75,
+  PrevButtonX + PrevButtonWidth * 0.5, PrevButtonY + PrevButtonHeight * 0.5
+);
 //
 fill(255, 255, 255);
 //
@@ -71,6 +106,8 @@ float ProgressBarWidth = appWidth * 20 / paperWidth;
 float ProgressBarHeight = appHeight * 0.5 / paperHeight;
 //
 rect(ProgressBarX, ProgressBarY, ProgressBarWidth, ProgressBarHeight);
+//
+
 //
 fill(200, 200, 200);
 //
@@ -113,12 +150,24 @@ float PauseHeight = appHeight * 2 / paperHeight;
 //
 rect(PauseX, PauseY, PauseWidth, PauseHeight);
 //
+fill(255);
+rect(PauseX + PauseWidth * 0.25, PauseY + PauseHeight * 0.2, PauseWidth * 0.15, PauseHeight * 0.6);
+rect(PauseX + PauseWidth * 0.60, PauseY + PauseHeight * 0.2, PauseWidth * 0.15, PauseHeight * 0.6);
+//
+fill(0, 180, 255);
+//
 float resetX = appWidth * 1 / paperWidth; //MrM's Numbers
 float resetY = appHeight * 8.5 / paperHeight;
 float resetWidth = appWidth * 2 / paperWidth;
 float resetHeight = appHeight * 2 / paperHeight;
 //
 rect(resetX, resetY, resetWidth, resetHeight);
+//
+stroke(255);
+strokeWeight(3);
+line(resetX + resetWidth * 0.2, resetY + resetHeight * 0.2, resetX + resetWidth * 0.8, resetY + resetHeight * 0.8);
+line(resetX + resetWidth * 0.8, resetY + resetHeight * 0.2, resetX + resetWidth * 0.2, resetY + resetHeight * 0.8);
+noStroke();
 //
 float LoopOneX = appWidth * 4 / paperWidth; //MrM's Numbers
 float LoopOneY = appHeight * 8.5 / paperHeight;
@@ -140,7 +189,7 @@ float ShuffleWidth = appWidth * 2 / paperWidth;
 float ShuffleHeight = appHeight * 2 / paperHeight;
 //
 rect(ShuffleX, ShuffleY, ShuffleWidth, ShuffleHeight);
-//
+//  
 float MuteX = appWidth * 22 / paperWidth; //MrM's Numbers
 float MuteY = appHeight * 8.5 / paperHeight;
 float MuteWidth = appWidth * 2 / paperWidth;
