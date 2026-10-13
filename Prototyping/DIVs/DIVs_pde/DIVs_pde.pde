@@ -163,11 +163,15 @@ float resetHeight = appHeight * 2 / paperHeight;
 //
 rect(resetX, resetY, resetWidth, resetHeight);
 //
-stroke(255);
-strokeWeight(3);
-line(resetX + resetWidth * 0.2, resetY + resetHeight * 0.2, resetX + resetWidth * 0.8, resetY + resetHeight * 0.8);
-line(resetX + resetWidth * 0.8, resetY + resetHeight * 0.2, resetX + resetWidth * 0.2, resetY + resetHeight * 0.8);
-noStroke();
+rect(resetX + resetWidth * 0.25, resetY + resetHeight * 0.25, resetWidth * 0.5, resetHeight * 0.5);
+
+rect(resetX + resetWidth * 0.375, resetY + resetHeight * 0.375, resetWidth * 0.25, resetHeight * 0.25);
+
+triangle(
+  resetX + resetWidth * 0.625, resetY + resetHeight * 0.75,
+  resetX + resetWidth * 0.75, resetY + resetHeight * 0.75,
+  resetX + resetWidth * 0.875, resetY + resetHeight * 0.875
+);
 //
 float LoopOneX = appWidth * 4 / paperWidth; //MrM's Numbers
 float LoopOneY = appHeight * 8.5 / paperHeight;
@@ -176,6 +180,16 @@ float LoopOneHeight = appHeight * 2 / paperHeight;
 //
 rect(LoopOneX, LoopOneY, LoopOneWidth, LoopOneHeight);
 //
+rect(LoopOneX + LoopOneWidth * 0.25, LoopOneY + LoopOneHeight * 0.25, LoopOneWidth * 0.5, LoopOneHeight * 0.5);
+
+rect(LoopOneX + LoopOneWidth * 0.375, LoopOneY + LoopOneHeight * 0.375, LoopOneWidth * 0.25, LoopOneHeight * 0.25);
+
+triangle(
+  LoopOneX + LoopOneWidth * 0.625, LoopOneY + LoopOneHeight * 0.75,
+  LoopOneX + LoopOneWidth * 0.75, LoopOneY + LoopOneHeight * 0.75,
+  LoopOneX + LoopOneWidth * 0.875, LoopOneY + LoopOneHeight * 0.875
+);
+//
 float Slow2xX = appWidth * 2.5 / paperWidth; //MrM's Numbers
 float Slow2xY = appHeight * 11.5 / paperHeight;
 float Slow2xWidth = appWidth * 2 / paperWidth;
@@ -183,31 +197,89 @@ float Slow2xHeight = appHeight * 2 / paperHeight;
 //
 rect(Slow2xX, Slow2xY, Slow2xWidth, Slow2xHeight);
 //
-float ShuffleX = appWidth * 13.5 / paperWidth; //MrM's Numbers
+rect(Slow2xX + Slow2xWidth * 0.25, Slow2xY + Slow2xHeight * 0.25, Slow2xWidth * 0.5, Slow2xHeight * 0.25);
+
+// Нижний треугольник с вершиной в центре (1/2, 1/2)
+triangle(
+  Slow2xX + Slow2xWidth * 0.25, Slow2xY + Slow2xHeight * 0.75,
+  Slow2xX + Slow2xWidth * 0.75, Slow2xY + Slow2xHeight * 0.75,
+  Slow2xX + Slow2xWidth * 0.5, Slow2xY + Slow2xHeight * 0.5
+);
+//
+float ShuffleX = appWidth * 13.5 / paperWidth;
 float ShuffleY = appHeight * 11.5 / paperHeight;
 float ShuffleWidth = appWidth * 2 / paperWidth;
 float ShuffleHeight = appHeight * 2 / paperHeight;
-//
+
 rect(ShuffleX, ShuffleY, ShuffleWidth, ShuffleHeight);
+
+stroke(255);
+strokeWeight(3);
+
+line(ShuffleX + ShuffleWidth * 0.25, ShuffleY + ShuffleHeight * 0.25, ShuffleX + ShuffleWidth * 0.75, ShuffleY + ShuffleHeight * 0.75);
+line(ShuffleX + ShuffleWidth * 0.25, ShuffleY + ShuffleHeight * 0.75, ShuffleX + ShuffleWidth * 0.75, ShuffleY + ShuffleHeight * 0.25);
+
+noStroke();
+fill(255);
+
+triangle(
+  ShuffleX + ShuffleWidth * 0.75, ShuffleY + ShuffleHeight * 0.125, // Verkhnij ugol osnovaniya
+  ShuffleX + ShuffleWidth * 0.75, ShuffleY + ShuffleHeight * 0.375, // Nizhnij ugol osnovaniya
+  ShuffleX + ShuffleWidth * 0.875, ShuffleY + ShuffleHeight * 0.25   // Nosik strelki sprava
+);
+
+triangle(
+  ShuffleX + ShuffleWidth * 0.75, ShuffleY + ShuffleHeight * 0.625, // Verkhnij ugol osnovaniya
+  ShuffleX + ShuffleWidth * 0.75, ShuffleY + ShuffleHeight * 0.875, // Nizhnij ugol osnovaniya
+  ShuffleX + ShuffleWidth * 0.875, ShuffleY + ShuffleHeight * 0.75   // Nosik strelki sprava
+);
+
+fill(255);
 //  
-float MuteX = appWidth * 22 / paperWidth; //MrM's Numbers
+fill(0, 180, 255);
+//
+float MuteX = appWidth * 22 / paperWidth; 
 float MuteY = appHeight * 8.5 / paperHeight;
 float MuteWidth = appWidth * 2 / paperWidth;
 float MuteHeight = appHeight * 2 / paperHeight;
 //
 rect(MuteX, MuteY, MuteWidth, MuteHeight);
 //
-float LoopInfinityX = appWidth * 25 / paperWidth; //MrM's Numbers
+rect(MuteX + MuteWidth * 0.25, MuteY + MuteHeight * 0.25, MuteWidth * 0.5, MuteHeight * 0.5);
+//
+fill(0, 180, 255);
+//
+float LoopInfinityX = appWidth * 25 / paperWidth;
 float LoopInfinityY = appHeight * 8.5 / paperHeight;
 float LoopInfinityWidth = appWidth * 2 / paperWidth;
 float LoopInfinityHeight = appHeight * 2 / paperHeight;
 //
 rect(LoopInfinityX, LoopInfinityY, LoopInfinityWidth, LoopInfinityHeight);
 //
-float Fast2xX = appWidth * 23.6 / paperWidth; //MrM's Numbers
+stroke(255);
+rect(LoopInfinityX + LoopInfinityWidth * 0.25, LoopInfinityY + LoopInfinityHeight * 0.25, LoopInfinityWidth * 0.5, LoopInfinityHeight * 0.5);
+rect(LoopInfinityX + LoopInfinityWidth * 0.375, LoopInfinityY + LoopInfinityHeight * 0.375, LoopInfinityWidth * 0.25, LoopInfinityHeight * 0.25);
+
+triangle(LoopInfinityX + LoopInfinityWidth * 0.25, LoopInfinityY + LoopInfinityHeight * 0.25, LoopInfinityX + LoopInfinityWidth * 0.375, LoopInfinityY + LoopInfinityHeight * 0.25, LoopInfinityX + LoopInfinityWidth * 0.25, LoopInfinityY + LoopInfinityHeight * 0.125);
+triangle(LoopInfinityX + LoopInfinityWidth * 0.75, LoopInfinityY + LoopInfinityHeight * 0.25, LoopInfinityX + LoopInfinityWidth * 0.75, LoopInfinityY + LoopInfinityHeight * 0.375, LoopInfinityX + LoopInfinityWidth * 0.875, LoopInfinityY + LoopInfinityHeight * 0.25);
+triangle(LoopInfinityX + LoopInfinityWidth * 0.25, LoopInfinityY + LoopInfinityHeight * 0.75, LoopInfinityX + LoopInfinityWidth * 0.25, LoopInfinityY + LoopInfinityHeight * 0.625, LoopInfinityX + LoopInfinityWidth * 0.125, LoopInfinityY + LoopInfinityHeight * 0.75);
+triangle(LoopInfinityX + LoopInfinityWidth * 0.75, LoopInfinityY + LoopInfinityHeight * 0.75, LoopInfinityX + LoopInfinityWidth * 0.625, LoopInfinityY + LoopInfinityHeight * 0.75, LoopInfinityX + LoopInfinityWidth * 0.75, LoopInfinityY + LoopInfinityHeight * 0.875);
+//
+fill(0, 180, 255);
+//
+float Fast2xX = appWidth * 23.6 / paperWidth;
 float Fast2xY = appHeight * 11.5 / paperHeight;
 float Fast2xWidth = appWidth * 2 / paperWidth;
 float Fast2xHeight = appHeight * 2 / paperHeight;
 //
 rect(Fast2xX, Fast2xY, Fast2xWidth, Fast2xHeight);
+//
+rect(Fast2xX + Fast2xWidth * 0.25, Fast2xY + Fast2xHeight * 0.25, Fast2xWidth * 0.5, Fast2xHeight * 0.25);
+
+// Нижний треугольник с вершиной в центре (1/2, 1/2)
+triangle(
+  Fast2xX + Fast2xWidth * 0.25, Fast2xY + Fast2xHeight * 0.75,
+  Fast2xX + Fast2xWidth * 0.75, Fast2xY + Fast2xHeight * 0.75,
+  Fast2xX + Fast2xWidth * 0.5, Fast2xY + Fast2xHeight * 0.5
+);
 //
