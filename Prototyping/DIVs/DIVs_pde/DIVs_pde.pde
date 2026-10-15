@@ -8,6 +8,8 @@ int appHeight = displayHeight;
 background(60, 60, 60);
 //
 fill(200, 200, 200);
+stroke(0);
+strokeWeight(1);
 //
 float paperWidth = 28.0;
 float paperHeight = 21.5;
@@ -155,7 +157,8 @@ rect(PauseX + PauseWidth * 0.25, PauseY + PauseHeight * 0.2, PauseWidth * 0.15, 
 rect(PauseX + PauseWidth * 0.60, PauseY + PauseHeight * 0.2, PauseWidth * 0.15, PauseHeight * 0.6);
 //
 fill(0, 180, 255);
-//
+stroke(0);
+strokeWeight(1);
 float resetX = appWidth * 1 / paperWidth; //MrM's Numbers
 float resetY = appHeight * 8.5 / paperHeight;
 float resetWidth = appWidth * 2 / paperWidth;
@@ -163,13 +166,6 @@ float resetHeight = appHeight * 2 / paperHeight;
 //
 rect(resetX, resetY, resetWidth, resetHeight);
 //
-fill(0, 180, 255);
-resetX = appWidth * 1 / paperWidth;
-resetY = appHeight * 8.5 / paperHeight;
-resetWidth = appWidth * 2 / paperWidth;
-resetHeight = appHeight * 2 / paperHeight;
-rect(resetX, resetY, resetWidth, resetHeight);
-
 stroke(255);
 strokeWeight(2);
 noFill();
@@ -179,6 +175,8 @@ line(resetX + resetWidth * 0.75, resetY + resetHeight * 0.25, resetX + resetWidt
 noStroke();
 //
 fill(0,180,255);
+stroke(0);
+strokeWeight(1);
 float LoopOneX = appWidth * 4 / paperWidth; //MrM's Numbers
 float LoopOneY = appHeight * 8.5 / paperHeight;
 float LoopOneWidth = appWidth * 2 / paperWidth;
@@ -193,7 +191,8 @@ rect(LoopOneX + LoopOneWidth * 0.25, LoopOneY + LoopOneHeight * 0.25, LoopOneWid
 rect(LoopOneX + LoopOneWidth * 0.375, LoopOneY + LoopOneHeight * 0.375, LoopOneWidth * 0.25, LoopOneHeight * 0.25);
 
 fill(255);
-noStroke();
+stroke(0);
+strokeWeight(1);
 triangle(
   LoopOneX + LoopOneWidth * 0.75, LoopOneY + LoopOneHeight * 0.125,
   LoopOneX + LoopOneWidth * 0.75, LoopOneY + LoopOneHeight * 0.375,
@@ -201,8 +200,9 @@ triangle(
 );
 //
 fill(0,180,255);
-
-float Slow2xX = appWidth * 2.5 / paperWidth; //MrM's Numbers
+stroke(0);
+strokeWeight(1);
+float Slow2xX = appWidth * 2.5 / paperWidth;
 float Slow2xY = appHeight * 11.5 / paperHeight;
 float Slow2xWidth = appWidth * 2 / paperWidth;
 float Slow2xHeight = appHeight * 2 / paperHeight;
@@ -214,10 +214,8 @@ noFill();
 stroke(255);
 strokeWeight(2);
 noFill();
-// Вертикальный прямоугольник слева
 rect(Slow2xX + Slow2xWidth * 0.25, Slow2xY + Slow2xHeight * 0.25, Slow2xWidth * 0.25, Slow2xHeight * 0.5);
 
-// Треугольник справа, смотрящий ВЛЕВО к центру
 fill(255);
 triangle(
   Slow2xX + Slow2xWidth * 0.5, Slow2xY + Slow2xHeight * 0.5,
@@ -227,7 +225,8 @@ triangle(
 noStroke();
 //
 fill(0,180,255);
-
+stroke(0);
+strokeWeight(1);
 float ShuffleX = appWidth * 13.5 / paperWidth;
 float ShuffleY = appHeight * 11.5 / paperHeight;
 float ShuffleWidth = appWidth * 2 / paperWidth;
@@ -259,7 +258,8 @@ triangle(
 fill(255);
 //  
 fill(0, 180, 255);
-//
+stroke(0);
+strokeWeight(1);
 float MuteX = appWidth * 22 / paperWidth; 
 float MuteY = appHeight * 8.5 / paperHeight;
 float MuteWidth = appWidth * 2 / paperWidth;
@@ -267,11 +267,15 @@ float MuteHeight = appHeight * 2 / paperHeight;
 //
 rect(MuteX, MuteY, MuteWidth, MuteHeight);
 //
-fill(255);
+stroke(255);
+strokeWeight(2);
+noFill();
 rect(MuteX + MuteWidth * 0.25, MuteY + MuteHeight * 0.25, MuteWidth * 0.5, MuteHeight * 0.5);
+noStroke();
 //
 fill(0, 180, 255);
-//
+stroke(0);
+strokeWeight(1);
 float LoopInfinityX = appWidth * 25 / paperWidth;
 float LoopInfinityY = appHeight * 8.5 / paperHeight;
 float LoopInfinityWidth = appWidth * 2 / paperWidth;
@@ -286,14 +290,39 @@ rect(LoopInfinityX + LoopInfinityWidth * 0.25, LoopInfinityY + LoopInfinityHeigh
 rect(LoopInfinityX + LoopInfinityWidth * 0.375, LoopInfinityY + LoopInfinityHeight * 0.375, LoopInfinityWidth * 0.25, LoopInfinityHeight * 0.25);
 
 fill(255);
-triangle(LoopInfinityX + LoopInfinityWidth * 0.25, LoopInfinityY + LoopInfinityHeight * 0.25, LoopInfinityX + LoopInfinityWidth * 0.375, LoopInfinityY + LoopInfinityHeight * 0.25, LoopInfinityX + LoopInfinityWidth * 0.25, LoopInfinityY + LoopInfinityHeight * 0.125);
-triangle(LoopInfinityX + LoopInfinityWidth * 0.75, LoopInfinityY + LoopInfinityHeight * 0.25, LoopInfinityX + LoopInfinityWidth * 0.75, LoopInfinityY + LoopInfinityHeight * 0.375, LoopInfinityX + LoopInfinityWidth * 0.875, LoopInfinityY + LoopInfinityHeight * 0.25);
-triangle(LoopInfinityX + LoopInfinityWidth * 0.25, LoopInfinityY + LoopInfinityHeight * 0.75, LoopInfinityX + LoopInfinityWidth * 0.25, LoopInfinityY + LoopInfinityHeight * 0.625, LoopInfinityX + LoopInfinityWidth * 0.125, LoopInfinityY + LoopInfinityHeight * 0.75);
-triangle(LoopInfinityX + LoopInfinityWidth * 0.75, LoopInfinityY + LoopInfinityHeight * 0.75, LoopInfinityX + LoopInfinityWidth * 0.625, LoopInfinityY + LoopInfinityHeight * 0.75, LoopInfinityX + LoopInfinityWidth * 0.75, LoopInfinityY + LoopInfinityHeight * 0.875);
 noStroke();
+
+// 1. Verkhnij levyj (Smotrit VVERKH)
+triangle(
+  LoopInfinityX + LoopInfinityWidth * 0.125, LoopInfinityY + LoopInfinityHeight * 0.25,
+  LoopInfinityX + LoopInfinityWidth * 0.375, LoopInfinityY + LoopInfinityHeight * 0.25,
+  LoopInfinityX + LoopInfinityWidth * 0.25,  LoopInfinityY + LoopInfinityHeight * 0.125
+);
+
+// 2. Verkhnij pravyj (Smotrit VPRAVO - ne trogal)
+triangle(
+  LoopInfinityX + LoopInfinityWidth * 0.75, LoopInfinityY + LoopInfinityHeight * 0.125,
+  LoopInfinityX + LoopInfinityWidth * 0.75, LoopInfinityY + LoopInfinityHeight * 0.375,
+  LoopInfinityX + LoopInfinityWidth * 0.875, LoopInfinityY + LoopInfinityHeight * 0.25
+);
+
+// 3. Nizhnij levyj (Smotrit VLEVO - ne trogal)
+triangle(
+  LoopInfinityX + LoopInfinityWidth * 0.25, LoopInfinityY + LoopInfinityHeight * 0.625,
+  LoopInfinityX + LoopInfinityWidth * 0.25, LoopInfinityY + LoopInfinityHeight * 0.875,
+  LoopInfinityX + LoopInfinityWidth * 0.125, LoopInfinityY + LoopInfinityHeight * 0.75
+);
+
+// 4. Nizhnij pravyj (Smotrit VNIZ)
+triangle(
+  LoopInfinityX + LoopInfinityWidth * 0.625, LoopInfinityY + LoopInfinityHeight * 0.75,
+  LoopInfinityX + LoopInfinityWidth * 0.875, LoopInfinityY + LoopInfinityHeight * 0.75,
+  LoopInfinityX + LoopInfinityWidth * 0.75,  LoopInfinityY + LoopInfinityHeight * 0.875
+);
 //
 fill(0, 180, 255);
-//
+stroke(0);
+strokeWeight(1);
 float Fast2xX = appWidth * 23.6 / paperWidth;
 float Fast2xY = appHeight * 11.5 / paperHeight;
 float Fast2xWidth = appWidth * 2 / paperWidth;
@@ -301,16 +330,17 @@ float Fast2xHeight = appHeight * 2 / paperHeight;
 //
 rect(Fast2xX, Fast2xY, Fast2xWidth, Fast2xHeight);
 //
-stroke(255);
-strokeWeight(2);
-noFill();
-rect(Fast2xX + Fast2xWidth * 0.25, Fast2xY + Fast2xHeight * 0.25, Fast2xWidth * 0.25, Fast2xHeight * 0.5); // Pryamougol'nik sleva
-
 fill(255);
 noStroke();
 triangle(
-  Fast2xX + Fast2xWidth * 0.75, Fast2xY + Fast2xHeight * 0.5,
-  Fast2xX + Fast2xWidth * 0.5, Fast2xY + Fast2xHeight * 0.25,
-  Fast2xX + Fast2xWidth * 0.5, Fast2xY + Fast2xHeight * 0.75
+  Fast2xX + Fast2xWidth * 0.25, Fast2xY + Fast2xHeight * 0.25, // Verkhnij levyj ugol
+  Fast2xX + Fast2xWidth * 0.25, Fast2xY + Fast2xHeight * 0.75, // Nizhnij levyj ugol
+  Fast2xX + Fast2xWidth * 0.5,  Fast2xY + Fast2xHeight * 0.5   // Nosik v tsentre vpravo
 );
+
+stroke(255);
+strokeWeight(2);
+noFill();
+rect(Fast2xX + Fast2xWidth * 0.5, Fast2xY + Fast2xHeight * 0.25, Fast2xWidth * 0.25, Fast2xHeight * 0.5);
+noStroke();
 //
