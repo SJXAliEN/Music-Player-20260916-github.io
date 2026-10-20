@@ -199,7 +199,7 @@ triangle(
   LoopOneX + LoopOneWidth * 0.875, LoopOneY + LoopOneHeight * 0.25
 );
 //
-fill(0,180,255);
+fill(0, 180, 255);
 stroke(0);
 strokeWeight(1);
 float Slow2xX = appWidth * 2.5 / paperWidth;
@@ -207,22 +207,16 @@ float Slow2xY = appHeight * 11.5 / paperHeight;
 float Slow2xWidth = appWidth * 2 / paperWidth;
 float Slow2xHeight = appHeight * 2 / paperHeight;
 rect(Slow2xX, Slow2xY, Slow2xWidth, Slow2xHeight);
-//
-stroke(255);
-strokeWeight(2);
-noFill();
-stroke(255);
-strokeWeight(2);
-noFill();
-rect(Slow2xX + Slow2xWidth * 0.25, Slow2xY + Slow2xHeight * 0.25, Slow2xWidth * 0.25, Slow2xHeight * 0.5);
 
 fill(255);
+stroke(0);
+strokeWeight(1);
+rect(Slow2xX + Slow2xWidth * 0.25, Slow2xY + Slow2xHeight * 0.25, Slow2xWidth * 0.25, Slow2xHeight * 0.5); // Belyy pryamougol'nik
 triangle(
   Slow2xX + Slow2xWidth * 0.5, Slow2xY + Slow2xHeight * 0.5,
   Slow2xX + Slow2xWidth * 0.75, Slow2xY + Slow2xHeight * 0.25,
   Slow2xX + Slow2xWidth * 0.75, Slow2xY + Slow2xHeight * 0.75
 );
-noStroke();
 //
 fill(0,180,255);
 stroke(0);
@@ -235,6 +229,7 @@ float ShuffleHeight = appHeight * 2 / paperHeight;
 rect(ShuffleX, ShuffleY, ShuffleWidth, ShuffleHeight);
 
 stroke(255);
+stroke(0);
 strokeWeight(3);
 
 line(ShuffleX + ShuffleWidth * 0.25, ShuffleY + ShuffleHeight * 0.25, ShuffleX + ShuffleWidth * 0.75, ShuffleY + ShuffleHeight * 0.75);
@@ -327,20 +322,16 @@ float Fast2xX = appWidth * 23.6 / paperWidth;
 float Fast2xY = appHeight * 11.5 / paperHeight;
 float Fast2xWidth = appWidth * 2 / paperWidth;
 float Fast2xHeight = appHeight * 2 / paperHeight;
-//
 rect(Fast2xX, Fast2xY, Fast2xWidth, Fast2xHeight);
-//
-fill(255);
-noStroke();
-triangle(
-  Fast2xX + Fast2xWidth * 0.25, Fast2xY + Fast2xHeight * 0.25, // Verkhnij levyj ugol
-  Fast2xX + Fast2xWidth * 0.25, Fast2xY + Fast2xHeight * 0.75, // Nizhnij levyj ugol
-  Fast2xX + Fast2xWidth * 0.5,  Fast2xY + Fast2xHeight * 0.5   // Nosik v tsentre vpravo
-);
 
-stroke(255);
-strokeWeight(2);
-noFill();
-rect(Fast2xX + Fast2xWidth * 0.5, Fast2xY + Fast2xHeight * 0.25, Fast2xWidth * 0.25, Fast2xHeight * 0.5);
-noStroke();
+fill(255);
+stroke(0);
+strokeWeight(1);
+triangle(
+  Fast2xX + Fast2xWidth * 0.25, Fast2xY + Fast2xHeight * 0.25,
+  Fast2xX + Fast2xWidth * 0.25, Fast2xY + Fast2xHeight * 0.75,
+  Fast2xX + Fast2xWidth * 0.5,  Fast2xY + Fast2xHeight * 0.5
+);
+rect(Fast2xX + Fast2xWidth * 0.5, Fast2xY + Fast2xHeight * 0.25, Fast2xWidth * 0.25, Fast2xHeight * 0.5); // Belyy pryamougol'nik
+
 //
